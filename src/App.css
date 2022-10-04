@@ -1,0 +1,125 @@
+body {
+  background-color: #363636;
+
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+}
+
+.conta {
+  width: 400px;
+  margin: 10% 30%;
+}
+
+.col {
+  margin-top: 5px;
+
+}
+
+.page-link {
+  margin: 3px 15px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background: #363636;
+  border-radius: 20px;
+}
+
+.page-link:hover {
+  box-shadow: 0px 0px 6px 0px white;
+  color: black;
+  font: size 19px;
+
+}
+
+.box {
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  border-radius: 25px
+}
+
+.btn-ss {
+  margin: 5px;
+  padding: 10px;
+  position: fixed;
+  margin-left: -5%;
+  border-radius: 15px;
+}
+
+.btn-ss:hover {
+  box-shadow: 0px 0px 10px 5px black;
+}
+
+.box:hover {
+  box-shadow: 0px 0px 5px 5px #cecece;
+
+}
+
+.btn-float-left {
+  float: right;
+}
+
+.g-btn {
+  width: 100% !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 15px !important;
+}
+
+.g-btn>div,
+.g-btn>div>svg {
+  width: 40px !important;
+  height: 38px !important;
+}
+
+.gifs {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gif {
+  margin: 4px 4px;
+  padding: 4px 4px;
+}
+
+.loader {
+  color: blue;
+}
+
+.new-form {
+  display: inline;
+  width: 50%;
+  margin-left: 20%;
+  background: white;
+  border: 0.2px solid black;
+  border-radius: 20px;
+  color: black;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.new-form:hover {
+  border: none;
+  box-shadow: 0px 0px 10px 3px white;
+
+}
+
+::placeholder {
+  color: white;
+}
+
+.new-btn {
+  color: white;
+  border-radius: 20px;
+}
+
+.new-btn:hover {
+  box-shadow: 0px 0px 10px 5px black;
+}
