@@ -7,12 +7,11 @@ import Paginate from "./Paginate";
 
 const Giphy = () => {
 
-  const [data, setData] = useState([]) // for get data(gif)
-  const [isLoading, setIsLoading] = useState(false) // loding function 
-  const [isError, setIsError] = useState(false) // handel error
-  const [search, setSearch] = useState("") // add seach function 
+  const [data, setData] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
+  const [isError, setIsError] = useState(false) 
+  const [search, setSearch] = useState("") 
 
-  // for paging 
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(15);
   const indexOfLastItem = currentPage * itemsPerPage;
