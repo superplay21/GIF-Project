@@ -24,7 +24,7 @@ const Home = () => {
 
       <div className="d-grid gap-2">
         <Button className="btn-ss" variant="primary" onClick={handleLogout}>
-          Log out
+          Logout
         </Button>
       </div>
       <div >

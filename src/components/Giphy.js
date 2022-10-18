@@ -19,6 +19,7 @@ const Giphy = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
+  
   useEffect(() => {
     
     const fetchData = async () => {
@@ -28,7 +29,7 @@ const Giphy = () => {
         const result = await axios("https://api.giphy.com/v1/gifs/trending", {
           params: {
             api_key: "wzWSigZr34jSBRIydDWKPbpz1IeCkYMX",
-            limit: 100
+            limit: 50
           }
         });
         console.log(result)
@@ -49,10 +50,12 @@ const Giphy = () => {
     }
 
     return currentItems.map(el => {
-      return (
+      return (<>
+         
         <div key={el.id} className="gif">
           <img src={el.images.fixed_height.url} />
         </div>
+        </>
       );
     });
   };
@@ -82,7 +85,7 @@ const Giphy = () => {
         params: {
           api_key: "wzWSigZr34jSBRIydDWKPbpz1IeCkYMX",
           q: search,
-          limit: 100
+          limit: 50
         }
       })
       setData(results.data.data);
@@ -106,7 +109,7 @@ const Giphy = () => {
         value={search}
         onChange={handleSearchChange}
         type="text"
-        placeholder="search"
+        placeholder="Search"
         className="form-control new-form"
       />
       <span>
@@ -115,7 +118,7 @@ const Giphy = () => {
           type="submit"
           className="new-btn btn btn-primary mx-4"
         >
-          Go
+          Seach
         </button>
       </span>
       </form>

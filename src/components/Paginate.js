@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Paginate = props => {
   const pageNumbers = [];
 
@@ -18,13 +18,9 @@ const Paginate = props => {
 
           return (
             <li className={classes}>
-              <a
-                onClick={() => props.pageSelected(number)}
-                href="/home"
-                className="page-link"
-              >
-                {number}
-              </a>
+            <Link to="/home"  className="page-link" onClick={() => props.pageSelected(number)}>
+                {number}</Link>
+              
             </li>
           );
         })}
